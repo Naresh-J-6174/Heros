@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Heroes</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:linear-gradient(to right,#000000,#1a1a1a,#330000);
+            color:white;
+            overflow-x:hidden;
+        }
+
+        header{
+            background:#e62429;
+            padding:20px;
+            text-align:center;
+            box-shadow:0 0 20px red;
+        }
+
+        header h1{
+            font-size:50px;
+            letter-spacing:3px;
+        }
+
+        nav{
+            margin-top:10px;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:15px;
+            font-size:18px;
+            transition:0.3s;
+        }
+
+        nav a:hover{
+            color:yellow;
+        }
+
+        .hero{
+            height:90vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-direction:column;
+            text-align:center;
+            background:url('https://wallpapercave.com/wp/wp4923984.jpg');
+            background-size:cover;
+            background-position:center;
+        }
+
+        .hero h2{
+            font-size:70px;
+            text-shadow:0 0 20px red;
+        }
+
+        .hero p{
+            font-size:22px;
+            margin-top:15px;
+            width:70%;
+        }
+
+        .btn{
+            margin-top:25px;
+            padding:15px 35px;
+            border:none;
+            border-radius:30px;
+            background:#e62429;
+            color:white;
+            font-size:20px;
+            cursor:pointer;
+            transition:0.3s;
+        }
+
+        .btn:hover{
+            transform:scale(1.1);
+            background:gold;
+            color:black;
+        }
+
+        .heroes{
+            padding:60px 20px;
+            text-align:center;
+        }
+
+        .heroes h2{
+            font-size:45px;
+            margin-bottom:40px;
+            color:#ff3131;
+        }
+
+        .cards{
+            display:flex;
+            justify-content:center;
+            flex-wrap:wrap;
+            gap:30px;
+        }
+
+        .card{
+            width:300px;
+            background:#111;
+            border-radius:20px;
+            overflow:hidden;
+            box-shadow:0 0 20px rgba(255,0,0,0.5);
+            transition:0.4s;
+        }
+
+        .card:hover{
+            transform:translateY(-10px) scale(1.05);
+        }
+
+        .card img{
+            width:100%;
+            height:350px;
+            object-fit:cover;
+        }
+
+        .card h3{
+            margin:15px 0;
+            font-size:30px;
+        }
+
+        .card p{
+            padding:0 15px 20px;
+            font-size:16px;
+        }
+
+        footer{
+            background:#111;
+            text-align:center;
+            padding:20px;
+            margin-top:50px;
+            border-top:2px solid red;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>MARVEL UNIVERSE</h1>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Heroes</a>
+            <a href="#">Movies</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>SPIDER-MAN & IRON MAN</h2>
+
+        <p>
+            Welcome to the Marvel Universe where heroes rise, villains fall,
+            and legends are born.
+        </p>
+
+        <button class="btn" onclick="showMessage()">
+            Assemble Now
+        </button>
+    </section>
+
+    <section class="heroes">
+
+        <h2>Marvel Legends</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <img src="https://wallpapercave.com/wp/wp7922173.jpg">
+
+                <h3>Spider-Man</h3>
+
+                <p>
+                    Friendly neighborhood superhero with incredible agility,
+                    spider sense and web powers.
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="https://wallpapercave.com/wp/wp2670847.jpg">
+
+                <h3>Iron Man</h3>
+
+                <p>
+                    Genius billionaire Tony Stark fights evil using his
+                    advanced Iron Man suits.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <h3>⚡ Marvel Fan Website ⚡</h3>
+        <p>Created using HTML, CSS & JavaScript</p>
+    </footer>
+
+    <script>
+
+        function showMessage(){
+            alert("🔥 Avengers Assemble! Welcome to Marvel Universe 🔥");
+        }
+
+    </script>
+
+</body>
+</html>
